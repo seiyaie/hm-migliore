@@ -23,4 +23,4 @@ https://portfolio.itsseiya.com/migliore/
 ## ローカルでの確認方法
 
 ```bash　　　
-git clone https://github.com/yourname/migliore.git
+git clone https://github.com/seiyaie/migliore.git
