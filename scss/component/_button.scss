@@ -16,6 +16,7 @@ component > button
     width: 100%;
     max-width: 270px;
     height: 50px;
+    transition: all 0.3s;
     @include g.mq() {
         font-size: 18px;
         max-width: 320px;
@@ -39,5 +40,11 @@ component > button
         color: var(--font-white);
         background-color: transparent;
         border: 1px solid var(--border-white);
+        @media (any-hover: hover) {
+            &:hover{
+                background-color: var(--bg-primary);
+                opacity: 1;
+            }
+        }
     }
 }

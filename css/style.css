@@ -269,6 +269,7 @@ component > button
   width: 100%;
   max-width: 270px;
   height: 50px;
+  transition: all 0.3s;
 }
 @media screen and (min-width: 768px) {
   .c-btn {
@@ -295,6 +296,12 @@ component > button
   color: var(--font-white);
   background-color: transparent;
   border: 1px solid var(--border-white);
+}
+@media (any-hover: hover) {
+  .c-btn--transparent:hover {
+    background-color: var(--bg-primary);
+    opacity: 1;
+  }
 }
 
 /*!
