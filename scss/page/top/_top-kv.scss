@@ -1,0 +1,14 @@
+@use "../../global" as g;
+
+/*!
+page > top > top-kv
+------------------------------
+*/
+
+.top-kv {
+    padding-bottom: 64px;
+    @include g.mq() {
+        padding-bottom: 104px;
+    }
+}
+

@@ -1,0 +1,16 @@
+@use "../global" as g;
+
+/*!
+layout > header
+------------------------------
+*/
+
+.header {
+    padding: 40px 0;
+    @include g.mq() {
+        .header {
+            padding-top: 56px;
+            padding-bottom: 60px;
+        }
+    }
+}

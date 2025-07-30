@@ -1,0 +1,120 @@
+@use "../../global" as g;
+
+/*!
+page > top > top-product
+------------------------------
+*/
+.top-product {
+    background-color: var(--bg-primary-light);
+}
+
+
+.top-product-inner {
+    max-width: 920px;
+    margin-inline: auto;
+    @include g.mq() {
+        width: 90%;
+    }
+}
+
+.top-product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+    @include g.mq() {
+        margin-top: 64px;
+        gap: 64px;
+    }
+}
+
+.top-product-item {
+    @include g.mq() {
+        display: grid;
+        grid-template-columns: 50% 1fr;
+        gap: 48px;
+        align-items: center;
+    }
+}
+
+.top-product-item-desc {
+    width: 90%;
+    margin-inline: auto;
+    margin-top: 16px;
+    @include g.mq() {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.top-product-item-name {
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.08em;
+}
+
+.top-product-item-text {
+    margin-top: 8px;
+    @include g.mq() {
+        margin-top: 16px;
+    }
+}
+
+
+.top-product-btn {
+    text-align: center;
+    margin-top: 24px;
+    @include g.mq() {
+        text-align: left;
+        margin-top: 32px;
+    }
+}
+
+.top-product-instagram {
+    background-color: var(--bg-primary);
+    width: min(90%, 920px);
+    margin-inline: auto;
+    margin-top: 64px;
+    padding: 48px 0;
+    @include g.mq() {
+        margin-top: 104px;
+        padding: 64px 0;
+    }
+}
+
+
+.top-product-instagram-inner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    @include g.mq() {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+    }
+}
+
+.top-product-instagram-text {
+    color: var(--font-white);
+    font-size: 18px;
+    @include g.mq() {
+        font-size: 20px;
+    }
+    span {
+        display: block;
+    }
+}
+
+
+.instagram-btn {
+    width: 270px;
+    height: 50px;
+    margin-inline: auto;
+    @include g.mq() {
+        width: 320px;
+        height: 55px;
+        margin-inline: 0;
+    }
+}

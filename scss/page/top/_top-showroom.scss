@@ -1,0 +1,52 @@
+@use "../../global" as g;
+
+/*!
+page > top > top-showroom
+------------------------------
+*/
+
+.top-showroom-list {
+  display: grid;
+  grid-template-columns: repeat(3, 260px);
+  align-items: center;
+  gap: 24px;
+  margin-top: 40px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  width: 100%;
+  @include g.mq() {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 64px;
+    gap: 60px;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.top-showroom-item {
+  width: 260px;
+  @include g.mq() {
+    width: 100%;
+  }
+}
+
+.top-showroom-name {
+  font-size: 18px;
+  margin-top: 16px;
+  text-align: center;
+  line-height: 1.6;
+  @include g.mq() {
+    font-size: 20px;
+  }
+}
+
+
+.top-showroom-btn {
+  margin-top: 12px;
+  @include g.mq() {
+    margin-top: 16px;
+    max-width: 320px;
+  }
+}

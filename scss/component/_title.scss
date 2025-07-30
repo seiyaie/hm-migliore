@@ -1,0 +1,25 @@
+@use "../global" as g;
+
+/*!
+component > title
+------------------------------
+*/
+
+.c-title {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: var(--font-family-en);
+    letter-spacing: 0.4em;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    &--white {
+        color: var(--font-white);
+    }
+    &--brown {
+        color: var(--font-primary)
+    }
+    @include g.mq() {
+        font-size: 32px;
+    }
+}

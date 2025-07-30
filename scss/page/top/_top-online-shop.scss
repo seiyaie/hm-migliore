@@ -1,0 +1,23 @@
+@use "../../global" as g;
+
+/*!
+page > top > top-online-shop
+------------------------------
+*/
+
+
+.top-online-shop {
+  background-image: url(../img/bg-top-online-shop.png);
+  background-size: cover;
+  background-position: center;
+  padding: 64px 0;
+  text-align: center;
+  @include g.mq() {
+    padding: 144px 0;
+  }
+}
+
+
+.top-online-shop-btn {
+  margin-top: 16px;
+}

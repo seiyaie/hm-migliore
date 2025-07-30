@@ -1,0 +1,81 @@
+@use "../../global" as g;
+
+/*!
+page > top > top-concept
+------------------------------
+*/
+
+.top-concept {
+    padding: 64px 0;
+    background-image: url("../img/bg-top-concept.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    color: var(--font-white);
+    @include g.mq() {
+            padding-top: 104px;
+            padding-bottom: 150px;
+    }
+}
+
+.top-concept-desc {
+    position: relative;
+    z-index: 1;
+}
+
+.top-concept-list {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    @include g.mq() {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 60px;
+        margin-top: 96px;
+    }
+}
+
+.top-concept-list-item {
+    width: 100%;
+}
+
+.top-concept-subtitle {
+    font-size: 18px;
+    line-height: 1.65;
+    letter-spacing: 0.08em;
+    @include g.mq() {
+        font-size: 30px;
+        margin-top: 16px;
+    }
+    span {
+        display: block;
+        @include g.mq() {
+            display: inline-block;
+        }
+    }
+}
+
+.top-concept-text {
+    margin-top: 24px;
+    line-height: 2;
+    @include g.mq() {
+        margin-top: 32px;
+        span {
+            display: block;
+        }
+    }
+}
+
+.top-concept-treat {
+    max-width: 151px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    @include g.mq() {
+        max-width: 351px;
+    }
+}

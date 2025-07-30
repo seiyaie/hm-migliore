@@ -1,0 +1,63 @@
+@use "../../global" as g;
+
+/*!
+page > top > top-company
+------------------------------
+*/
+
+.top-company {
+    padding-top: 64px;
+    text-align: center;
+    @include g.mq() {
+        padding-top: 104px;
+    }
+}
+
+.top-company-info {
+    margin-top: 24px;
+    @include g.mq() {
+        margin-top: 48px;
+    }
+}
+
+.top-company-address span {
+    display: block;
+}
+
+.top-company-sns {
+    margin-top: 24px;
+}
+
+.top-company-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    @include g.mq() {
+        flex-direction: row;
+        gap: 24px;
+    }
+}
+
+.top-company-sns-item {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    @include g.mq() {
+        font-size: 18px;
+    }
+}
+
+.top-company-map {
+    margin-top: 40px;
+    aspect-ratio: 360 / 190;
+    @include g.mq() {
+        margin-top: 104px;
+        aspect-ratio: 1366 / 360;
+    }
+    iframe {
+        width: 100%;
+        height: 100%;
+        vertical-align: bottom;
+    }
+}
+

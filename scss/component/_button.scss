@@ -1,0 +1,43 @@
+@use "../global" as g;
+
+/*!
+component > button
+------------------------------
+*/
+
+.c-btn {
+    display: inline-block;
+    border-radius: 100vh;
+    font-size: 16px;
+    font-family: "montserrat", sans-serif;
+    line-height: 50px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    width: 100%;
+    max-width: 270px;
+    height: 50px;
+    @include g.mq() {
+        font-size: 18px;
+        max-width: 320px;
+        height: 55px;
+        line-height: 55px;
+    }
+    @media (any-hover: hover) {
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+    &--brown {
+        background-color: var(--bg-primary);
+        color: var(--font-white);
+    }
+    &--white {
+        background-color: var(--bg-white);
+        color: var(--font-black);
+    }
+    &--transparent {
+        color: var(--font-white);
+        background-color: transparent;
+        border: 1px solid var(--border-white);
+    }
+}
